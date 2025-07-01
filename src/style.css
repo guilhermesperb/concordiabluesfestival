@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Isidora Sans';
+    src: url('./fonts/IsidoraSans-SemiBold.otf');
+    font-weight: thin;
+    font-style: thin;
+}
+
+body {
+    font-family: 'Isidora Sans';
+}
+
+iframe {
+    border-radius: 12px;
+}
