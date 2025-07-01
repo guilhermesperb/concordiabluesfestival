@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --background-color: #06123a;
+    --primary-color: #dcaa2d;
+    --secondary-color: #4b88c7;
+    --highlight-color: #d73f16;
+}
+
+html {
+    overflow-x: hidden;
+}
 
 * {
-    text-decoration: none;
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,9 +25,84 @@
 }
 
 body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     font-family: 'Isidora Sans';
+}
+
+nav {
+    padding: 0.4rem 0;
+    width: 18dvw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p, a {
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+section {
+    width: 100%;
+    height: 100dvh;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 3.5em;
+        color: white;
+    }
+
+    h3 {
+        color: grey;
+    }
+}
+
+section::selection {
+    background-color: var(--highlight-color);
+}
+
+.asides {
+    display: flex;
+
+    aside {
+        width: 50dvw;
+        padding: 1rem;
+    }
+
+    .right {
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+    }
+}
+
+.asides::selection {
+    background-color: var(--primary-color);
 }
 
 iframe {
     border-radius: 12px;
+     width: 100%; 
+     height: 500px; 
 }
