@@ -33,15 +33,13 @@ body {
 }
 
 nav {
-    padding: 0.7rem 4rem;
-        border-radius: 0 0 12px 12px;
-        background-color: var(--background-color);
-        transition: top 0.3s ease-in-out;
-    width: 30dvw;
+    padding: 0.4rem 0;
+    width: 18dvw;
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: top 0.1s ease-in-out;
 
     p,
     a {
@@ -242,10 +240,10 @@ main {
 @media (max-width: 600px) {
     nav {
         width: 70dvw;
-        padding: 0.7rem 5dvw;
+        padding: 0.5rem 5dvw;
         border-radius: 0 0 12px 12px;
         background-color: var(--background-color);
-        transition: background-color 0.1s ease-in-out;
+        transition: top 0.3s ease-in-out;
     }
 
     section {
@@ -267,10 +265,10 @@ main {
 
     main {
         height: auto;
-        padding: 0 2rem;
 
         h1 {
             margin: 0.7rem 0rem;
+            text-align: center;
         }
 
         .main {
